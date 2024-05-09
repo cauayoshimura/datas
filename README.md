@@ -1,36 +1,28 @@
 # Funções de Data
 
-Este é um simples aplicativo web que permite aos usuários realizar operações com datas. Ele contém três funções principais:
+Este é um projeto simples que implementa algumas funções em JavaScript para lidar com operações de data, como comparar datas, calcular intervalo entre datas e obter a data atual.
 
-## Comparar Datas
+## Funcionalidades Implementadas
 
-Esta função permite ao usuário inserir duas datas e determinar qual delas é maior. Se as datas forem iguais, uma mensagem informando isso será exibida.
+### 1. Comparar Datas
 
-## Calcular Intervalo
+A função `compararDatas()` recebe duas datas informadas pelo usuário e compara-as para determinar qual é a maior. Se a primeira data for maior que a segunda, a função exibirá a mensagem "A primeira data é maior." Se a segunda data for maior que a primeira, exibirá "A segunda data é maior." Se as datas forem iguais, a mensagem será "As datas são iguais."
 
-Esta função calcula o intervalo em dias entre duas datas inseridas pelo usuário. Ele verifica se a primeira data é mais antiga que a segunda data antes de calcular o intervalo. Se as datas estiverem na ordem correta, o número de dias entre elas será exibido.
+### 2. Calcular Intervalo entre Datas
 
-## Obter Data Atual
+A função `calcularIntervalo()` recebe duas datas informadas pelo usuário e calcula o intervalo em dias entre elas. A função primeiro verifica se a primeira data é mais antiga que a segunda data. Se for, calcula a diferença em milissegundos entre as datas e converte essa diferença em dias. O resultado é então exibido na página HTML.
 
-Esta função simplesmente obtém a data e hora atuais do sistema do usuário e as exibe no formato "hora:minuto - dia/mês/ano".
+### 3. Obter Data Atual
 
-## Como usar
+A função `obterDataAtual()` retorna a data e hora atuais no formato "hora:minuto - dia/mês/ano". Esta função utiliza o objeto `Date` do JavaScript para obter a data atual, e então formata essa data conforme o padrão desejado.
 
-1. Abra o arquivo `index.html` em seu navegador da web.
-2. Insira duas datas nos campos fornecidos.
-3. Clique nos botões correspondentes para executar as operações desejadas.
-4. O resultado das operações será exibido abaixo dos botões.
+## Como Utilizar
 
-## Exemplo
+1. Abra o arquivo `index.html` em seu navegador.
+2. Informe duas datas nos campos fornecidos.
+3. Clique nos botões correspondentes para executar as operações desejadas:
+    - "Comparar Datas" irá mostrar qual das duas datas é maior.
+    - "Calcular Intervalo" irá calcular quantos dias há entre as duas datas.
+    - "Obter Data Atual" irá exibir a data e hora atuais no formato especificado.
 
-Suponha que você queira comparar duas datas: 10 de maio de 2024 e 15 de maio de 2024.
-
-1. Insira "2024-05-10" no primeiro campo de data.
-2. Insira "2024-05-15" no segundo campo de data.
-3. Clique no botão "Comparar Datas".
-4. O resultado será "A primeira data é maior.", pois 10 de maio de 2024 é antes de 15 de maio de 2024.
-
-## Tecnologias utilizadas
-
-- HTML
-- JavaScript
+Certifique-se de ter o JavaScript habilitado em seu navegador para que as funções funcionem corretamente.
